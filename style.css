@@ -36,6 +36,14 @@ header ul li{
     padding: 5px;
 }
 
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    color: pink;
+}
+
 .container{
     text-align: center;
 }
@@ -56,6 +64,31 @@ header ul li{
     font-size: 30px; 
 }
 
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
 #about p{
     max-width: 600px;
     margin: 0 auto;
@@ -68,11 +101,27 @@ header ul li{
 
 .form input{
     width: 50%;
-    padding: 3px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .form button{
     width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #8A2387, #E94057);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin: -5px;
+    margin-top: 20px;
+}
+
+.form button:hover{
+    background-position: left bottom;
 }

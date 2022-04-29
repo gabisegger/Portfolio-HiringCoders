@@ -18,8 +18,8 @@
         </div>
         <ul>
             <li><a target="_blank" href="https://github.com/gabisegger">GitHub</a></li>
-            <li><a target="_blank" href="mailto:teste@teste.com"></a>E-mail</li>
-            <li><a target="_blank" href="https://wa.me/+5511999999999"></a>Whatsapp</li>
+            <li><a target="_blank" href="mailto:teste@teste.com">E-mail</a></li>
+            <li><a target="_blank" href="https://wa.me/+5511999999999">Whatsapp</a></li>
         </ul>
     </header>
     <main>
@@ -28,10 +28,10 @@
                 <h1 class="title">Gabriela Segger Caruso</h1>
                 <h5 class="subtitle">Full Stack Developer</h5>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-caret-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
             </div> 
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque consectetur iusto est necessitatibus, provident vero repellendus delectus. Inventore, praesentium reiciendis vero quisquam eum laboriosam magni beatae veritatis delectus similique.
                 </p>
@@ -47,5 +47,7 @@
             </div>
         </section>
     </main>
+
+    <script src="animation.js"></script>
 </body>
 </html>
