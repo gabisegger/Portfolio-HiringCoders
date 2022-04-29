@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 ul{
@@ -16,7 +17,23 @@ a{
 }
 
 body{
-    background: linear-gradient(90deg, #BA5370, #F4E2D8);
+   background: #11101e;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #7a7a7a;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 5px;
 }
 
 .container{
@@ -25,10 +42,18 @@ body{
 
 .container .name h1{
     font-size: 60px; 
+}   
+
+.title{
+    background: -webkit-linear-gradient(left, #8A2387, #E94057);
+    background: linear-gradient(left, #8A2387, #E94057);
+
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
 }
 
-.container .name h5{
-    font-size: 25px; 
+.subtitle{
+    font-size: 30px; 
 }
 
 #about p{
@@ -45,6 +70,7 @@ body{
     width: 50%;
     padding: 3px;
     border-radius: 5px;
+    border: 1px solid lightgray;
 }
 
 .form button{
