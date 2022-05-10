@@ -107,6 +107,7 @@ header ul li a:hover{
     padding: 5px 10px;
     border: none;
     border-radius: 5px 0px 0px 5px;
+    color: gray;
 }
 
 .form button{
